@@ -1,0 +1,142 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BASE STYLES */
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #fff9f5;
+    color: #333;
+  }
+  
+  /* HEADER */
+  header {
+    background: #d35400;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background: #fff;
+  }
+  
+  /* HIGHLIGHTS */
+  .highlights {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    
+  }
+  
+  /* FOOTER */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 1024px) {
+    .highlights {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .highlights {
+    display: flex; flex-direction: row;             /* arrange children in a row */
+    justify-content: center;     /* center the row horizontally */
+    gap: 30px;                   /* space between cards */
+    flex-wrap: wrap;             /* wrap to next line on small screens */
+    padding: 20px 0;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1); /* optional card background */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 10px auto;
+  }

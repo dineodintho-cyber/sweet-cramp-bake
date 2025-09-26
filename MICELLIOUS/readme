@@ -1,0 +1,75 @@
+Sweet Cramp Bakery is a cozy online bakery website that shares our story, showcases our delightful 
+products, and lets customers easily connect with us.
+Features
+
+    Responsive layout for both mobile and desktop.
+
+    Navigation menu with linked pages
+
+    "Home","About ","product","enquiry" and "Contact" sections
+
+    Font Awesome icons integration
+
+    Basic CSS styling
+
+
+File & Folder Structure
+
+│__ Pages  
+│   ├── about.html          # About Us page  
+│   ├── contact.html        # Contact page  
+│   ├── products.html       # Products page  
+│   ├── enquiry.html        # Enquiry page  
+│   ├── order.html          # Order Now page  
+│
+├── css/
+│   └── main.css            # Main stylesheet   
+│
+└── assets/
+|     ├── images            # Images used in the site  
+|     └── icons             # Icons used in the site
+|
+└── index.html              # Home page (entry point)  
+
+Installation / How to Run
+
+    git clone https://github.com/your-username/sweet-cramp-bakery.git
+    the is noserver setup thet is required.
+
+Dependencies
+
+    Font Awesome
+    – for icons
+
+    Google Fonts
+    – for typography
+
+Usage Instructions
+
+    Edit the index.html file to update homepage content.
+
+    Modify css/styles.css to change colors, fonts, or layout.
+
+    Add new pages and link them through the navigation bar.
+
+Author
+
+dineo talakgale
+
+Changelog
+v1.0.0 – Initial Release (2025-09-26)
+
+    Added homepage as (index.html)
+
+    Created, About Us,product,contact,order now and enquiry pages
+
+    Added navigation bar,header and footer
+
+
+
+    REFERENCES
+    W3Schools. (2025, September 22). W3Schools. Retrieved from W3Schools: https://www.w3schools.com/cssref/pr_class_cursor.php
+
+    Schools, W. (2025, September 26). W3 SCHOOLS. Retrieved from W3 SCHOOLS: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+
+    Jiks, S. (2025, September 26). Mrs tarollo, )

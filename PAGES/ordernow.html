@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWEET CRUMBS BAKERY | Order Now</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <header>
+    <nav>
+        <ul>
+            <li><a href="/Index.html" class="active">Home</a></li>
+            <li><a href="/PAGES/about.html">About</a></li>
+            <li><a href="/PAGES/product.html">Product</a></li>
+          <li><a href="/PAGES/enquiry.html">Enquiry</a></li>
+            <li><a href="/PAGES/contact.html">Contact</a></li>
+            <li><a href="/PAGES/order now .html">order now</a></li>
+          </ul>
+    </nav>
+  </header>
+
+  <!-- Order Section -->
+  <main>
+    <section class="hero">
+      <h1>Order Your Favorite Treats</h1>
+      <p>Freshly baked and delivered with love ❤️</p>
+    </section>
+
+    <section class="highlights">
+      <div class="card">
+        <h2>Chocolate Cake</h2>
+        <p>Rich & moist chocolate delight.</p>
+        <p><strong>Price:</strong> R15</p>
+      </div>
+
+      <div class="card">
+        <h2>Cupcakes (6 Pack)</h2>
+        <p>Choose from vanilla, red velvet, or chocolate.</p>
+        <p><strong>Price:</strong> R45</p>
+      </div>
+
+      <div class="card">
+        <h2>Cookies (12 Pack)</h2>
+        <p>Classic chocolate chip or oatmeal raisin.</p>
+        <p><strong>Price:</strong> R18</p>
+      </div>
+
+      <div class="card">
+        <h2>mini loafs (12 Pack)</h2>
+        <p>brown or white with raisin.</p>
+        <p><strong>Price:</strong> R22</p>
+      </div>
+  
+    </section>
+
+    <!-- Order Form -->
+    <section class="hero">
+      <h2>Place Your Order</h2>
+      <form action="submit_order.php" method="POST" class="order-form">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="product">Select Product:</label><br>
+        <select id="product" name="product" required>
+          <option value="">--Choose an item--</option>
+          <option value="Chocolate Cake">Chocolate Cake - R15</option>
+          <option value="Cupcakes">Cupcakes (6 Pack) - R10</option>
+          <option value="Cookies">Cookies (12 Pack) - R8</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <label for="message">Special Instructions:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+        <button type="submit" class="btn">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sweet Crumbs Bakery | Designed by TALAKGALE DINEO</p>
+  </footer>
+</body>
+</html>

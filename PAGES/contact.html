@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SWEET CRUMPS BAKERY| Home</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/CSS/style.css">
 </head>
-<body style="background-color: palevioletred;">
+<body>
   <!-- Navigation Menu -->
   <header>
     <nav>
       <ul>
-        <li><a href="../index.html" class="active">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./enquiry.html">Enquiry</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
+          <li><a href="/Index.html" class="active">Home</a></li>
+          <li><a href="/PAGES/about.html">About</a></li>
+          <li><a href="/PAGES/product.html">Product</a></li>
+        <li><a href="/PAGES/enquiry.html">Enquiry</a></li>
+          <li><a href="/PAGES/contact.html">Contact</a></li>
+          <li><a href="/PAGES/order now .html">order now</a></li>
+        </ul>
     </nav>
   </header>
 
@@ -31,3 +35,51 @@
 <p><strong>Email:</strong> dineodintho@gmail.com</p>
 <p><strong>Phone:</strong> +27 68 267 8 076</p>
 <p><strong>Hours:</strong> Mon-Sat 7AM–6PM</p>
+
+<div>
+  <form id="contact-form" class="contact-form" action="#" method="post" aria-label="Contact form">
+    <div class="input-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+    </div>
+
+    <div class="input-row">
+        <label for="surname">Surname</label>
+        <input id="surname" name="surname" type="text" required />
+    </div>
+
+    <div class="input-row">
+        <label for="idnum">ID / Passport</label>
+        <input id="idnum" name="idnum" type="text" required />
+    </div>
+
+    <div class="input-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+    </div>
+
+    <div class="input-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <div>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+    </div>
+</form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Sweet Crumbs Bakery | Designed by TALAKGALE DINEO</p>
+
+  <!-- Social Media Icons -->
+  <div class="social-links">
+    <a href="https://www.facebook.com/Dineo Tala" target="_blank" rel="noopener noreferrer" class="facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://wa.me/0682678076" target="_blank" rel="noopener noreferrer" class="whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</footer>
+
