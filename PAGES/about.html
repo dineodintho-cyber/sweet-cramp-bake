@@ -1,200 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | Sweet Crumbs Bakery</title>
-
+  <meta name="description" content="About Sweet Crumbs Bakery, founded in 2020 at Seshego. Mission, vision, and customer info in card format." />
+  
   <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <style>
-    body {
-      background-color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    /* HEADER */
-    header {
-      background: #d35400;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #f1c40f;
-    }
-
-    /* CONTENT */
-    h1, h2 {
-      text-align: center;
-      color: black;
-    }
-
-    p {
-      max-width: 800px;
-      margin: 0 auto 1rem auto;
-      text-align: center;
-      font-size: 18px;
-    }
-
-    .btn {
-      display: block;
-      width: 200px;
-      margin: 2rem auto;
-      padding: 12px 20px;
-      background: #e67e22;
-      color: #fff;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #d35400;
-    }
-
-    iframe {
-      display: block;
-      margin: 2rem auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    /* FOOTER */
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      font-size: 30px;
-      color: #fff;
-      transition: transform 0.3s, color 0.3s;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-
-    .social-icons .fa-facebook:hover {
-      color: #1877f2;
-    }
-
-    .social-icons .fa-whatsapp:hover {
-      color: #25D366;
-    }
-  </style>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="/CSS/style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <h1>Sweet Crumbs Bakery</h1>
     <nav>
       <ul>
-        <li><a href="../Index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="./product.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="order-now.html">Order Now</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/PAGES/about.html" class="active">About</a></li>
+        <li><a href="/PAGES/product.html">Products</a></li>
+        <li><a href="/PAGES/contact.html">Contact</a></li>
+        <li><a href="/PAGES/ordernow.html">Order Now</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main>
-    <h1>About Sweet Crumbs Bakery</h1>
-
-    <p>
-      Sweet Crumbs Bakery was founded in 2025 in <strong>Seshego, Polokwane</strong>.  
-      We are passionate about crafting delicious breads, cakes, and pastries using 
-      organic ingredients and traditional baking methods. Our bakery is more than a shop 
-      it’s a place where community, love, and sweet memories are made.
+    <h2>About Sweet Crumbs Bakery</h2>
+    <p class="intro">
+      Founded in 2020 in Seshego, Sweet Crumbs Bakery is dedicated to baking fresh, organic breads and sweet treats with love and care. We aim to create a warm community hub where every crumb brings joy.
     </p>
 
-    <h2>Our Mission</h2>
-    <p>
-      “To bring joy to every bite by creating fresh, high-quality baked goods 
-      made with love, organic ingredients, and a passion for tradition 
-      creating sweet moments for our customers every day.”
-    </p>
+    <aside class="cards">
+      <article class="card">
+        <i class="fas fa-bullseye"></i>
+        <h3>Our Mission</h3>
+        <p>To craft high-quality baked goods that delight our customers, using natural ingredients and traditional methods that honor our heritage.</p>
+      </article>
 
-    <h2>Our Vision</h2>
-    <p>
-      “To be the most loved neighborhood bakery, known for spreading happiness, 
-      inspiring connections, and making life sweeter  one crumb at a time.”
-    </p>
+      <article class="card">
+        <i class="fas fa-eye"></i>
+        <h3>Our Vision</h3>
+        <p>To be Seshego’s favorite bakery, inspiring connection and happiness through every sweet bite and loaf.</p>
+      </article>
 
-     <!-- Hero Section -->
-  <section class="hero">
-    <h1>Our Delicious Products</h1>
-    <p>Freshly baked with love, ready to brighten your day!</p>
-  </section>
+      <article class="card">
+        <i class="fas fa-heart"></i>
+        <h3>Why Customers Love Us</h3>
+        <p>We focus on freshness, organic quality, friendly service, and creating a cozy space where everyone feels welcome.</p>
+      </article>
 
-  <!-- meet our staff-->
-  <section class="highlights">
-    <div class="card">
-      <img src="../ASSETS/headchef...webp" alt="headchef" width="200" height="150">
-      <h2>headchef</h2>
-      <p><strong>Nkoana:</strong> seoka</p>
-    </div>
+      <article class="card">
+        <i class="fas fa-handshake"></i>
+        <h3>Our Promise</h3>
+        <p>Consistent quality, honesty, and baking with passion – ensuring every order makes your day a little sweeter.</p>
+      </article>
 
-    <div class="card">
-      <img src="../ASSETS/manager baker.jfif" alt="manager" width="200" height="150">
-      <h2>manager</h2>
-      <p><strong>mr Talakgale:</strong> Happy</p>
-    </div>
-
-    <div class="card">
-      <img src="../ASSETS/superviseor bak.jfif" alt="superviseor" width="200" height="150">
-      <h2>superviseor</h2>
-      <p><strong>ramaphala:</strong> Dintho</p>
-    </div>
-  </section>
-   
+      <article class="card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Visit Us</h3>
+        <p>15758 Extension 76, Seshego, Polokwane — come say hello and smell the fresh bread!</p>
+      </article>
+    </aside>
 
     <a href="product.html" class="btn">Explore Our Products</a>
-
-    <!-- Google Map -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.343929516145!2d29.402032311617056!3d-23.87741997319176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec72777954a5715%3A0x4be78d9dc36dd50f!2s15758%20Extension%2076%2C%20Polokwane%2C%20South%20Africa!5e0!3m2!1sen!2sie!4v1756214330015!5m2!1sen!2sie"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
   </main>
 
-  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Sweet Crumbs Bakery | Designed with ❤️ in Seshego</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://wa.me/27682678076" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
+    <p>&copy; 2025 Sweet Crumbs Bakery | Made with ❤️ in Seshego</p>
   </footer>
 
 </body>

@@ -1,51 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SWEET CRUMPS BAKERY| Home</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>SWEET CRUMPS BAKERY | Home</title>
+  <meta name="description" content="Welcome to Sweet Crumps Bakery – Freshly baked bread, cakes, and pastries made with love and organic ingredients." />
+  <meta name="keywords" content="bakery, sweet crumbs, cakes, pastries, bread, organic, fresh, wedding cakes, custom cakes" />
+  <meta name="author" content="Talakgale Dineo" />
+  <link rel="canonical" href="https://sweetcrumbsbakery.co.za/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./ASSETS/favicon.png" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a2b1234567.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #111111;
+      color: #e9ccc2;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      padding: 0 20px 50px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    a {
+      color: #c27a28;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover,
+    a.active {
+      color: #f2c94c;
+    }
+
+    /* Header & Nav */
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 600;
+    }
+
+    nav ul li a {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    /* Hero Section */
+    .hero {
+      max-width: 900px;
+      margin: 40px auto 60px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: #f2c94c;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+      color: #e9ccc2;
+      font-style: italic;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #c27a28;
+      color: #111;
+      font-weight: 700;
+      border-radius: 4px;
+      box-shadow: 0 0 10px #f2c94c88;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #f2c94c;
+      color: #111;
+      box-shadow: 0 0 20px #f2c94ccc;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #000000bb;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #f2c94cdd;
+    }
+
+    /* Highlights */
+    .highlights {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .card {
+      background-color: #222222;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1;
+      box-shadow: 0 0 15px #000000cc;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #f2c94c;
+    }
+
+    .card p {
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* FAQ Accordion */
+    .faq {
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+
+    .faq h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #f2c94c;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .accordion-btn {
+      background-color: #222222;
+      color: #e9ccc2;
+      cursor: pointer;
+      padding: 15px 20px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #444;
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: 600;
+      outline: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-btn:hover,
+    .accordion-btn.active {
+      background-color: #c27a28;
+      color: #111;
+    }
+
+    .accordion-content {
+      padding: 0 20px 15px;
+      background-color: #111111;
+      display: none;
+      font-size: 1rem;
+      color: #ccc;
+      border-bottom: 1px solid #444;
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-content {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 8px;
+      box-shadow: 0 0 40px #f2c94cdd;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #f2c94c;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      user-select: none;
+    }
+
+    .close:hover {
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111111;
+      color: #e9ccc2;
+      text-align: center;
+      padding: 25px 20px 10px;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+    }
+
+    .social-icons a {
+      color: #c27a28;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #f2c94c;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .highlights {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .gallery {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
 </head>
-<body style="
-    background: linear-gradient(to bottom, white(194, 124, 40), rgb(233, 204, 178));
-    color: black (102, 65, 50);  /* dark beige text */
-    padding: 100px 20px;
-    text-align: center;
-">
-  <!-- Navigation Menu -->
+
+<body>
+
   <header>
     <nav>
       <ul>
         <li><a href="../Index.html" class="active">Home</a></li>
         <li><a href="./PAGES/about.html">About</a></li>
         <li><a href="./PAGES/product.html">Product</a></li>
-      <li><a href="./PAGES/enquiry.html">Enquiry</a></li>
+        <li><a href="./PAGES/enquiry.html">Enquiry</a></li>
         <li><a href="./PAGES/contact.html">Contact</a></li>
-        <li><a href="/PAGES/order now .html">order now</a></li>
+        <li><a href="/PAGES/order now .html">Order Now</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Section -->
-  <MAIN>
-    <h1 style=" text-align: center"> WELCOME TO SWEET CRAMPS BAKERY </h1>
-<p style="font-size:large;">
-     "The Sweetest Welcome! Hi there!
-     We're excited to share our baked creations with you.
-     Take a look around and treat yourself to something delightful!"
-</p>
-    
-  </MAIN>
   <section class="hero">
-    <img src="./ASSETS/R.jfif" width="250" height="250" alt="SWEET CRUMPS BAKERY">
-    <img src="./ASSETS/HGHY.webp" width="250" height="250" alt="SWEET CRUMPS BAKERY">
-    <img src="./ASSETS/OIP (1).webp" width="250" height="250" alt="SWEET CRUMPS BAKERY">
+    <div class="gallery">
+      <img src="./ASSETS/R.jfif" alt="Sweet Crumps Bakery" onclick="openLightbox(this.src)" />
+      <img src="./ASSETS/HGHY.webp" alt="Sweet Crumps Bakery" onclick="openLightbox(this.src)" />
+      <img src="./ASSETS/OIP (1).webp" alt="Sweet Crumps Bakery" onclick="openLightbox(this.src)" />
+    </div>
     <h1>Sweet Crumbs Bakery</h1>
     <p>Baked with Love, Served with Joy</p>
-    <a href="/PAGES/order now .html" class="btn">Order Now</a>
+    <a href="/PAGES/ordernow.html " class="btn">Order Now</a>
   </section>
 
-  <!-- Highlights -->
   <section class="highlights">
     <div class="card">
       <h2>Freshly Baked</h2>
@@ -54,7 +323,7 @@
     <div class="card">
       <h2>Organic Ingredients</h2>
       <p>Our goods are made with locally sourced organic produce.</p>
-      <p>such as -whole wheat ,Quinoa and organic milk .</p>
+      <p>such as whole wheat, Quinoa and organic milk.</p>
     </div>
     <div class="card">
       <h2>Custom Orders</h2>
@@ -62,17 +331,57 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <button class="accordion-btn">Do you deliver?</button>
+    <div class="accordion-content">
+      <p>Yes! We deliver within a 10km radius from our bakery.</p>
+    </div>
+    <button class="accordion-btn">Do you make gluten-free cakes?</button>
+    <div class="accordion-content">
+      <p>We offer gluten-free options on special request.</p>
+    </div>
+  </section>
+
+  <div id="lightboxModal" class="lightbox" onclick="closeLightbox()">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightboxImage" class="lightbox-content" />
+  </div>
+
   <footer>
     <div class="social-icons">
-      <a href="https://www.facebook.com/dineo tala" target="_blank">
-        <i class="fab fa-facebook fa-3x"></i>
-      </a>
-      <a href="https://wa.me/27682678076" target="_blank">
-        <i class="fab fa-whatsapp fa-3x"></i>
-      </a>
+      <a href="https://www.facebook.com/dineo tala" target="_blank" rel="noopener"><i class="fab fa-facebook fa-3x"></i></a>
+      <a href="https://wa.me/27682678076" target="_blank" rel="noopener"><i class="fab fa-whatsapp fa-3x"></i></a>
     </div>
-    <p>&copy 2025 Sweet Crumbs Bakery | Designed by TALAKGALE DINEO</p>
+    <p>&copy; 2025 Sweet Crumbs Bakery | Designed by TALAKGALE DINEO</p>
   </footer>
+
+  <script>
+    // Accordion Functionality
+    const acc = document.getElementsByClassName("accordion-btn");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+
+    // Lightbox Gallery
+    function openLightbox(src) {
+      document.getElementById("lightboxModal").style.display = "flex";
+      document.getElementById("lightboxImage").src = src;
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightboxModal").style.display = "none";
+    }
+  </script>
+
 </body>
+
 </html>

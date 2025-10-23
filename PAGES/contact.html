@@ -1,85 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Crumbs Bakery | About Us</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <style>
+    body {
+      background-color: bisque;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SWEET CRUMPS BAKERY| Home</title>
-  <link rel="stylesheet" href="/CSS/style.css">
+    header, footer {
+      width: 100%;
+      text-align: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #f2c19b;
+      margin: 0;
+    }
+
+    .navbar ul li {
+      margin: 10px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .navbar ul li a.active {
+      color: brown;
+    }
+
+    main.about-container {
+      max-width: 900px;
+      background-color: #fff3e0;
+      padding: 40px;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-header h1 {
+      color: brown;
+      margin-bottom: 10px;
+    }
+
+    .about-header p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .about-section {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .about-section h2 {
+      color: brown;
+      margin-bottom: 10px;
+    }
+
+    .about-section p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .about-image {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .team-section {
+      background-color: #fff8f0;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .team-card {
+      background-color: #fff3e0;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .team-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .team-card h3 {
+      margin: 10px 0 5px;
+      color: brown;
+    }
+
+    .team-card p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #f2c19b;
+    }
+
+    .social-links a {
+      color: brown;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .social-links a:hover {
+      color: darkred;
+    }
+  </style>
 </head>
 <body>
+
   <!-- Navigation Menu -->
   <header>
-    <nav>
+    <nav class="navbar">
       <ul>
-          <li><a href="/Index.html" class="active">Home</a></li>
-          <li><a href="/PAGES/about.html">About</a></li>
-          <li><a href="/PAGES/product.html">Product</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/PAGES/about.html" class="active">About</a></li>
+        <li><a href="/PAGES/product.html">Products</a></li>
         <li><a href="/PAGES/enquiry.html">Enquiry</a></li>
-          <li><a href="/PAGES/contact.html">Contact</a></li>
-          <li><a href="/PAGES/order now .html">order now</a></li>
-        </ul>
+        <li><a href="/PAGES/contact.html">Contact</a></li>
+        <li><a href="/PAGES/ordernow.html">Order Now</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- About Content -->
+  <main class="about-container">
+    <section class="about-header">
+      <h1>About Sweet Crumbs Bakery</h1>
+      <p>Freshly baked goodness, crafted with love and served with a smile.</p>
+      <img src="/IMAGES/bakery-interior.jpg" alt="Inside Sweet Crumbs Bakery" class="about-image">
+    </section>
 
-<body style="background-color: bisque;"></body>
-<h1>Contact Us</h1>
-<p>Visit our SESHEGO branch or call us for orders.</p>
+    <section class="about-section">
+      <h2>Our Story</h2>
+      <p>Founded in 2020 in Seshego, Sweet Crumbs Bakery started as a small home-based business with a passion for creating delicious treats for family and friends. Over time, our love for baking and customer satisfaction helped us grow into a trusted local bakery known for quality, freshness, and friendly service.</p>
+      <p>At Sweet Crumbs, every pastry, loaf, and cake is baked from scratch using the finest ingredients. Whether it’s a birthday cake, wedding dessert, or a simple loaf of bread, we ensure each creation carries our signature taste of happiness.</p>
+    </section>
 
-<div class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.343929516145!2d29.402032311617056!3d-23.87741997319176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec72777954a5715%3A0x4be78d9dc36dd50f!2s15758%20Extension%2076%2C%20Polokwane%2C%20South%20Africa!5e0!3m2!1sen!2sie!4v1756214330015!5m2!1sen!2sie""></iframe>
-</div>
+    <section class="about-section">
+      <h2>Our Mission</h2>
+      <p>Our mission is to spread joy through freshly baked products that bring people together. We aim to maintain high standards of quality and service while supporting our community through local sourcing and customer care.</p>
+    </section>
 
-<p><strong>Email:</strong> dineodintho@gmail.com</p>
-<p><strong>Phone:</strong> +27 68 267 8 076</p>
-<p><strong>Hours:</strong> Mon-Sat 7AM–6PM</p>
+    <section class="about-section">
+      <h2>Our Values</h2>
+      <ul style="text-align:left; list-style-type: disc; padding-left: 30px;">
+        <li>💛 Quality Ingredients and Craftsmanship</li>
+        <li>🤝 Friendly and Reliable Customer Service</li>
+        <li>🌍 Supporting Local Communities</li>
+        <li>🎂 Creativity in Every Bake</li>
+      </ul>
+    </section>
 
-<div>
-  <form id="contact-form" class="contact-form" action="#" method="post" aria-label="Contact form">
-    <div class="input-row">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required />
+    <section class="team-section">
+      <h2>Meet Our Team</h2>
+      <div class="team-members">
+        <div class="team-card">
+          <img src="/IMAGES/owner.jpg" alt="Founder - Dineo Talakgale">
+          <h3>Dineo Talakgale</h3>
+          <p>Founder & Head Baker</p>
+        </div>
+
+        <div class="team-card">
+          <img src="/IMAGES/assistant.jpg" alt="Baking Assistant">
+          <h3>Lerato M.</h3>
+          <p>Baking Assistant</p>
+        </div>
+
+        <div class="team-card">
+          <img src="/IMAGES/customer-service.jpg" alt="Customer Service Representative">
+          <h3>Thabo K.</h3>
+          <p>Customer Service</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sweet Crumbs Bakery | Designed by Talakgale Dineo</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/Dineo Tala" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/27682678076" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
     </div>
+  </footer>
 
-    <div class="input-row">
-        <label for="surname">Surname</label>
-        <input id="surname" name="surname" type="text" required />
-    </div>
-
-    <div class="input-row">
-        <label for="idnum">ID / Passport</label>
-        <input id="idnum" name="idnum" type="text" required />
-    </div>
-
-    <div class="input-row">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
-    </div>
-
-    <div class="input-row">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-
-    <div>
-        <button class="btn btn-primary" type="submit">Send Message</button>
-    </div>
-</form>
-</div>
-
-<footer>
-  <p>&copy; 2025 Sweet Crumbs Bakery | Designed by TALAKGALE DINEO</p>
-
-  <!-- Social Media Icons -->
-  <div class="social-links">
-    <a href="https://www.facebook.com/Dineo Tala" target="_blank" rel="noopener noreferrer" class="facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://wa.me/0682678076" target="_blank" rel="noopener noreferrer" class="whatsapp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
-</footer>
-
+</body>
+</html>

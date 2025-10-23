@@ -10,77 +10,113 @@
   <!-- Navigation Menu -->
   <header>
     <nav>
-        <ul>
-            <li><a href="/Index.html" class="active">Home</a></li>
-            <li><a href="/PAGES/about.html">About</a></li>
-            <li><a href="/PAGES/product.html">Product</a></li>
-          <li><a href="/PAGES/enquiry.html">Enquiry</a></li>
-            <li><a href="/PAGES/contact.html">Contact</a></li>
-            <li><a href="/PAGES/order now .html">order now</a></li>
-          </ul>
+      <ul>
+        <li><a href="/Index.html">Home</a></li>
+        <li><a href="/PAGES/about.html">About</a></li>
+        <li><a href="/PAGES/product.html">Product</a></li>
+        <li><a href="/PAGES/enquiry.html">Enquiry</a></li>
+        <li><a href="/PAGES/contact.html">Contact</a></li>
+        <li><a href="/PAGES/order-now.html" class="active">Order Now</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Order Section -->
+  <!-- Hero Section -->
   <main>
     <section class="hero">
       <h1>Order Your Favorite Treats</h1>
       <p>Freshly baked and delivered with love ❤️</p>
     </section>
 
+    <!-- Product Highlights -->
     <section class="highlights">
       <div class="card">
+        <img src="../images/chocolate-cake.jpg" alt="Chocolate Cake">
         <h2>Chocolate Cake</h2>
         <p>Rich & moist chocolate delight.</p>
         <p><strong>Price:</strong> R15</p>
       </div>
 
       <div class="card">
+        <img src="../images/cupcakes.jpg" alt="Cupcakes">
         <h2>Cupcakes (6 Pack)</h2>
         <p>Choose from vanilla, red velvet, or chocolate.</p>
         <p><strong>Price:</strong> R45</p>
       </div>
 
       <div class="card">
+        <img src="../images/cookies.jpg" alt="Cookies">
         <h2>Cookies (12 Pack)</h2>
         <p>Classic chocolate chip or oatmeal raisin.</p>
         <p><strong>Price:</strong> R18</p>
       </div>
 
       <div class="card">
-        <h2>mini loafs (12 Pack)</h2>
-        <p>brown or white with raisin.</p>
+        <img src="../images/mini-loafs.jpg" alt="Mini Loafs">
+        <h2>Mini Loafs (12 Pack)</h2>
+        <p>Brown or white with raisin.</p>
         <p><strong>Price:</strong> R22</p>
       </div>
-  
     </section>
 
     <!-- Order Form -->
-    <section class="hero">
+    <section class="order-section">
       <h2>Place Your Order</h2>
+      <p>Please fill out the form below to place your order. We’ll contact you shortly to confirm.</p>
+
       <form action="submit_order.php" method="POST" class="order-form">
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <!-- Customer Information -->
+        <fieldset>
+          <legend>Customer Details</legend>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
 
-        <label for="product">Select Product:</label><br>
-        <select id="product" name="product" required>
-          <option value="">--Choose an item--</option>
-          <option value="Chocolate Cake">Chocolate Cake - R15</option>
-          <option value="Cupcakes">Cupcakes (6 Pack) - R10</option>
-          <option value="Cookies">Cookies (12 Pack) - R8</option>
-        </select><br><br>
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" required><br><br>
+        </fieldset>
 
-        <label for="quantity">Quantity:</label><br>
-        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+        <!-- Order Details -->
+        <fieldset>
+          <legend>Order Information</legend>
+          <label for="product">Select Product:</label><br>
+          <select id="product" name="product" required>
+            <option value="">--Choose an item--</option>
+            <option value="Chocolate Cake">Chocolate Cake - R15</option>
+            <option value="Cupcakes">Cupcakes (6 Pack) - R45</option>
+            <option value="Cookies">Cookies (12 Pack) - R18</option>
+            <option value="Mini Loafs">Mini Loafs (12 Pack) - R22</option>
+          </select><br><br>
 
-        <label for="message">Special Instructions:</label><br>
-        <textarea id="message" name="message" rows="4"></textarea><br><br>
+          <label for="quantity">Quantity:</label><br>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+
+          <label for="delivery">Delivery or Pickup:</label><br>
+          <select id="delivery" name="delivery" required>
+            <option value="">--Select Option--</option>
+            <option value="Delivery">Delivery</option>
+            <option value="Pickup">Pickup</option>
+          </select><br><br>
+
+          <label for="date">Preferred Date:</label><br>
+          <input type="date" id="date" name="date" required><br><br>
+
+          <label for="message">Special Instructions:</label><br>
+          <textarea id="message" name="message" rows="4" placeholder="Any special requests?"></textarea><br><br>
+        </fieldset>
 
         <button type="submit" class="btn">Submit Order</button>
       </form>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+      <h3>Need Assistance?</h3>
+      <p>📞 Call us: <a href="tel:+2768 267 8076">068 2678 076</a></p>
+      <p>📧 Email: <a href="mailto:orders@sweetcrumbs.co.za">orders@sweetcrumbs.co.za</a></p>
+      <p>🏠 Address:  ext 76 marabestreet, Pplokwane, South Africa</p>
     </section>
   </main>
 
