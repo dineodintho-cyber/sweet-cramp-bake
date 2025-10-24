@@ -333,3 +333,134 @@ aside.cards .card p {
     max-width: 100%;
   }
 }
+    body {
+      background-color: black;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    header, footer {
+      width: 100%;
+      text-align: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #f2c19b;
+      margin: 0;
+    }
+
+    .navbar ul li {
+      margin: 10px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .navbar ul li a.active {
+      color: brown;
+    }
+
+    main.about-container {
+      max-width: 900px;
+      background-color: #4e4d4b;
+      padding: 40px;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-header h1 {
+      color: brown;
+      margin-bottom: 10px;
+    }
+
+    .about-header p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .about-section {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .about-section h2 {
+      color: brown;
+      margin-bottom: 10px;
+    }
+
+    .about-section p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .about-image {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .team-section {
+      background-color: black;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .team-card {
+      background-color: #332b1f;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 6px#332b1f(0,0,0,0.1);
+    }
+
+    .team-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .team-card h3 {
+      margin: 10px 0 5px;
+      color: brown;
+    }
+
+    .team-card p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #f2c19b;
+    }
+
+    .social-links a {
+      color: brown;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .social-links a:hover {
+      color: darkred;
+    }
