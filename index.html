@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>SWEET CRUMPS BAKERY | Home</title>
-  <meta name="description" content="Welcome to Sweet Crumps Bakery – Freshly baked bread, cakes, and pastries made with love and organic ingredients." />
+  <title>SWEET CRUMBS BAKERY | Home</title>
+  <meta name="description" content="Welcome to Sweet Crumbs Bakery – Freshly baked bread, cakes, and pastries made with love and organic ingredients." />
   <meta name="keywords" content="bakery, sweet crumbs, cakes, pastries, bread, organic, fresh, wedding cakes, custom cakes" />
   <meta name="author" content="Talakgale Dineo" />
   <link rel="canonical" href="https://sweetcrumbsbakery.co.za/" />
@@ -55,6 +55,14 @@
     header {
       padding: 20px 0;
       border-bottom: 1px solid #333;
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
 
     nav ul {
@@ -63,11 +71,35 @@
       justify-content: center;
       gap: 30px;
       font-weight: 600;
+      transition: all 0.3s ease;
     }
 
     nav ul li a {
       font-size: 1rem;
       text-transform: uppercase;
+    }
+
+    /* Hamburger */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+
+    .burger-line {
+      width: 100%;
+      height: 3px;
+      background-color: #f2c94c;
+      border-radius: 2px;
+      transition: all 0.3s ease;
     }
 
     /* Hero Section */
@@ -268,22 +300,24 @@
     }
 
     /* Responsive */
-    @media (max-width: 900px) {
-      .highlights {
-        flex-direction: column;
-        gap: 20px;
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: flex;
       }
-    }
 
-    @media (max-width: 600px) {
       nav ul {
+        display: none;
         flex-direction: column;
-        gap: 15px;
+        background-color: #111;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
       }
 
-      .gallery {
-        flex-direction: column;
-        gap: 20px;
+      nav ul.show {
+        display: flex;
       }
     }
   </style>
@@ -293,26 +327,31 @@
 
   <header>
     <nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
       <ul>
         <li><a href="../Index.html" class="active">Home</a></li>
         <li><a href="./PAGES/about.html">About</a></li>
         <li><a href="./PAGES/product.html">Product</a></li>
         <li><a href="./PAGES/enquiry.html">Enquiry</a></li>
         <li><a href="./PAGES/contact.html">Contact</a></li>
-        <li><a href="/PAGES/order now .html">Order Now</a></li>
+        <li><a href="/PAGES/ordernow.html">Order Now</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
     <div class="gallery">
-      <img src="./ASSETS/first p.webp" alt="Sweet Crumps Bakery" onclick="openLightbox(this.src)" />
-      <img src="./ASSETS/chocolate cake web.webp" alt="Sweet Crumps Bakery" onclick="openLightbox(this.src)" />
-      <img src="./ASSETS/first ct.webp" alt="Sweet Crumps Bakery" onclick="openLightbox(this.src)" />
+      <img src="./ASSETS/first p.webp" alt="Sweet Crumbs Bakery" onclick="openLightbox(this.src)" />
+      <img src="./ASSETS/chocolate cake web.webp" alt="Sweet Crumbs Bakery" onclick="openLightbox(this.src)" />
+      <img src="./ASSETS/first ct.webp" alt="Sweet Crumbs Bakery" onclick="openLightbox(this.src)" />
     </div>
-    <h1>Sweet Crumbs Bakery</h1>
+    <h1>Sweet Crumbs Bakery in Pretoria</h1>
     <p>Baked with Love, Served with Joy</p>
-    <a href="/PAGES/ordernow.html " class="btn">Order Now</a>
+    <a href="/PAGES/ordernow.html" class="btn">Order Now</a>
   </section>
 
   <section class="highlights">
@@ -322,8 +361,7 @@
     </div>
     <div class="card">
       <h2>Organic Ingredients</h2>
-      <p>Our goods are made with locally sourced organic produce.</p>
-      <p>such as whole wheat, Quinoa and organic milk.</p>
+      <p>Our goods are made with locally sourced organic produce such as whole wheat, quinoa, and organic milk.</p>
     </div>
     <div class="card">
       <h2>Custom Orders</h2>
@@ -380,6 +418,13 @@
     function closeLightbox() {
       document.getElementById("lightboxModal").style.display = "none";
     }
+
+    // Hamburger Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('nav ul');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
   </script>
 
 </body>

@@ -5,8 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SWEET CRUMPS BAKERY | Enquiry</title>
   <link rel="stylesheet" href="/CSS/style.css">
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* BODY */
+    body {
+      background-color: black;
+      color: #e9ccc2;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 0 20px 50px;
+    }
+
+    /* HEADER */
+    header {
+      width: 100%;
+      max-width: 1000px;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 600;
+      flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+      color: #c27a28;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover,
+    header nav ul li a.active {
+      color: #f2c94c;
+    }
+
+    /* ENQUIRY SECTION */
+    .enquiry-section {
+      width: 100%;
+      max-width: 900px;
+      padding: 40px 20px;
+      background-color: #222222;
+      margin-top: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .enquiry-section h1 {
+      font-size: 2.5rem;
+      color: #f2c94c;
+      margin-bottom: 20px;
+    }
+
+    .intro-text {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    /* FORM STYLES */
+    .enquiry-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .enquiry-form label {
+      font-weight: bold;
+      color: #f2c94c;
+      text-align: left;
+    }
+
+    .enquiry-form input,
+    .enquiry-form select,
+    .enquiry-form textarea {
+      padding: 10px;
+      background-color: #333;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: #ccc;
+      font-size: 1rem;
+      margin-top: 5px;
+      width: 100%;
+    }
+
+    .enquiry-form input::placeholder,
+    .enquiry-form textarea::placeholder {
+      color: #bbb;
+    }
+
+    .enquiry-form button {
+      padding: 15px;
+      background-color: #c27a28;
+      color: #111;
+      font-weight: 700;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #f2c94c88;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    .enquiry-form button:hover {
+      background-color: #f2c94c;
+      color: #111;
+      box-shadow: 0 0 20px #f2c94c88;
+    }
+
+    /* FOOTER */
+    footer {
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid #333;
+      padding: 25px 20px 10px;
+      font-size: 0.9rem;
+      color: #e9ccc2;
+      margin-top: 50px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .enquiry-section {
+        padding: 30px 15px;
+      }
+
+      .enquiry-form input,
+      .enquiry-form select,
+      .enquiry-form textarea {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
-<body style="background-color:black;">
+<body>
 
   <!-- Navigation Menu -->
   <header>

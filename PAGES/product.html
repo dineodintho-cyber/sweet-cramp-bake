@@ -5,8 +5,198 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SWEET CRUMBS BAKERY | Products</title>
   <link rel="stylesheet" href="../CSS/style.css">
+  
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* BODY */
+    body {
+      background-color: #111111;
+      color: #e9ccc2;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 0 20px 50px;
+      text-align: center;
+    }
+
+    /* HEADER */
+    header {
+      width: 100%;
+      max-width: 1000px;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 600;
+      flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+      color: #c27a28;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover,
+    header nav ul li a.active {
+      color: #f2c94c;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      width: 100%;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+      background-color: #222222;
+      color: #f2c94c;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    /* PRODUCTS GRID */
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin: 40px auto;
+    }
+
+    .card {
+      background-color: #222222;
+      width: 260px;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 15px #000000cc;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #f2c94c88;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      color: #f2c94c;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .card .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #c27a28;
+      color: #111;
+      font-weight: 700;
+      border-radius: 4px;
+      box-shadow: 0 0 10px #f2c94c88;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .card .btn:hover {
+      background-color: #f2c94c;
+      color: #111;
+      box-shadow: 0 0 20px #f2c94c88;
+    }
+
+    /* CALL TO ACTION */
+    .cta {
+      background-color: #222222;
+      padding: 40px 20px;
+      margin: 60px 0;
+      border-radius: 8px;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      color: #f2c94c;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid #333;
+      padding: 25px 20px 10px;
+      font-size: 0.9rem;
+      color: #e9ccc2;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .highlights {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+
+      .hero {
+        padding: 30px 10px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
   <!-- Navigation Menu -->
   <header>
     <nav>
@@ -83,13 +273,4 @@
   <!-- Contact Call to Action -->
   <section class="cta">
     <h2>Can’t Find What You’re Looking For?</h2>
-    <p>We also take custom orders for birthdays, weddings, and events!</p>
-    <a href="enquiry.html" class="btn">Send an Enquiry</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Sweet Crumbs Bakery | Designed by TALAKGALE DINEO</p>
-  </footer>
-</body>
-</html>
+    <p>We also take custom orders for birthdays, weddings

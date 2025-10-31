@@ -6,6 +6,182 @@
   <title>Sweet Crumbs Bakery | About Us</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../CSS/style.css" />
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* BODY */
+    body {
+      background-color: #111; /* Dark background similar to product page */
+      color: #e9ccc2;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 0 20px 50px;
+    }
+
+    /* HEADER */
+    header {
+      width: 100%;
+      max-width: 1000px;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid #333;
+      background-color: #222; /* Dark background */
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 600;
+      flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+      color: #f2c94c; /* Highlighted text in golden yellow */
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover,
+    header nav ul li a.active {
+      color: #c27a28; /* Slightly darker golden color on hover */
+    }
+
+    /* ABOUT SECTION */
+    .about-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #222222;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-header h1 {
+      font-size: 2.5rem;
+      color: #f2c94c;
+      margin-bottom: 20px;
+    }
+
+    .about-header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .about-header .about-image {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #f2c94c;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    /* TEAM SECTION */
+    .team-section {
+      margin-top: 40px;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    .team-member {
+      text-align: center;
+      width: 250px;
+      margin-bottom: 30px;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      font-size: 1.5rem;
+      color: #f2c94c;
+      margin-bottom: 10px;
+    }
+
+    .team-member p {
+      color: #ccc;
+    }
+
+    /* FOOTER */
+    footer {
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid #333;
+      padding: 25px 20px 10px;
+      font-size: 0.9rem;
+      color: #e9ccc2;
+      margin-top: 50px;
+    }
+
+    .social-links a {
+      color: #f2c94c;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #c27a28;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .about-container {
+        padding: 20px 15px;
+      }
+
+      .about-header h1 {
+        font-size: 2rem;
+      }
+
+      .about-section h2 {
+        font-size: 1.8rem;
+      }
+
+      .team-members {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .team-member {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -55,19 +231,19 @@
     <section class="team-section">
       <h2>Meet Our Team</h2>
       <div class="team-members">
-        <div class="team-card">
+        <div class="team-member">
           <img src="../ASSETS/dineo.jpg" alt="Founder - Dineo Talakgale">
           <h3>Dineo Talakgale</h3>
           <p>Founder & Head Baker</p>
         </div>
 
-        <div class="team-card">
+        <div class="team-member">
           <img src="../ASSETS/manangere.webp" alt="Baking Assistant">
           <h3>Happy M.</h3>
           <p>Baking Assistant</p>
         </div>
 
-        <div class="team-card">
+        <div class="team-member">
           <img src="../ASSETS/assistant.jpg" alt="Customer Service Representative">
           <h3>Happiness S.</h3>
           <p>Customer Service</p>
