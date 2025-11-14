@@ -23,14 +23,38 @@
     function closeLightbox() {
       document.getElementById("lightboxModal").style.display = "none";
     }
+  // LIGHTBOX FUNCTIONALITY
+function openLightbox(src) {
+  const lightbox = document.getElementById("lightboxModal");
+  const lightboxImage = document.getElementById("lightboxImage");
   
+  lightbox.style.display = "flex";
+  lightboxImage.src = src;
+}
+
+// Close the lightbox when the background is clicked
+function closeLightbox() {
+  const lightbox = document.getElementById("lightboxModal");
+  lightbox.style.display = "none";
+}
+
+// ACCORDION FUNCTIONALITY
+const accordionButtons = document.querySelectorAll('.accordion-btn');
+
+accordionButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  });
+});
+
 
 <script>
   // -------------------------------
   // Accordion Functionality
   // -------------------------------
   const acc = document.getElementsByClassName("accordion-btn");
-  for (let i = 0; i < acc.length; i++) {
+  for (let i = 0; i < acc.length  i++) {
     acc[i].addEventListener("click", function () {
       this.classList.toggle("active");
       const panel = this.nextElementSibling;
@@ -77,4 +101,26 @@
     });
   }
 </script>
+// LIGHTBOX FUNCTIONALITY
+function openLightbox(src) {
+  const lightbox = document.getElementById("lightboxModal");
+  const lightboxImage = document.getElementById("lightboxImage");
+
+  lightbox.style.display = "flex";
+  lightboxImage.src = src;
+}
+
+// Close the lightbox when the background is clicked
+function closeLightbox() {
+  const lightbox = document.getElementById("lightboxModal");
+  lightbox.style.display = "none";
+}
+
+// ACCORDION FUNCTIONALITY
+const accordionButtons = document.querySelectorAll('.accordion-btn');
+
+accordionButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    content.style.display = content.style.display === 'block' ? 'none' : 'block
 

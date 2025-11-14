@@ -2,264 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sweet Crumbs Bakery | About Us</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <style>
-    /* RESET */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SWEET CRUMBS BAKERY | Home</title>
+  <meta name="description" content="Sweet Crumbs Bakery – Fresh daily baked cakes, pastries, and breads in Pretoria. Organic ingredients and custom cakes available." />
+  <meta name="keywords" content="bakery, sweet crumbs, cakes, pastries, bread, organic bakery, custom cakes pretoria" />
+  <meta name="author" content="Talakgale Dineo" />
+  <link rel="canonical" href="https://sweetcrumbsbakery.co.za/" />
 
-    /* BODY */
-    body {
-      background-color: #111; /* Dark background similar to product page */
-      color: #e9ccc2;
-      font-family: 'Roboto', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 0 20px 50px;
-    }
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./ASSETS/favicon.png" />
 
-    /* HEADER */
-    header {
-      width: 100%;
-      max-width: 1000px;
-      padding: 20px 0;
-      text-align: center;
-      border-bottom: 1px solid #333;
-      background-color: #222; /* Dark background */
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
 
-    header nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      font-weight: 600;
-      flex-wrap: wrap;
-    }
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2b1234567.js" crossorigin="anonymous"></script>
 
-    header nav ul li a {
-      color: #f2c94c; /* Highlighted text in golden yellow */
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: color 0.3s ease;
-    }
-
-    header nav ul li a:hover,
-    header nav ul li a.active {
-      color: #c27a28; /* Slightly darker golden color on hover */
-    }
-
-    /* ABOUT SECTION */
-    .about-container {
-      width: 100%;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #222222;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .about-header h1 {
-      font-size: 2.5rem;
-      color: #f2c94c;
-      margin-bottom: 20px;
-    }
-
-    .about-header p {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-
-    .about-header .about-image {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    .about-section h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #f2c94c;
-    }
-
-    .about-section p {
-      font-size: 1.1rem;
-      color: #ccc;
-      margin-bottom: 20px;
-    }
-
-    /* TEAM SECTION */
-    .team-section {
-      margin-top: 40px;
-    }
-
-    .team-members {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      padding: 0;
-    }
-
-    .team-member {
-      text-align: center;
-      width: 250px;
-      margin-bottom: 30px;
-    }
-
-    .team-member img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-      margin-bottom: 15px;
-    }
-
-    .team-member h3 {
-      font-size: 1.5rem;
-      color: #f2c94c;
-      margin-bottom: 10px;
-    }
-
-    .team-member p {
-      color: #ccc;
-    }
-
-    /* FOOTER */
-    footer {
-      width: 100%;
-      text-align: center;
-      border-top: 1px solid #333;
-      padding: 25px 20px 10px;
-      font-size: 0.9rem;
-      color: #e9ccc2;
-      margin-top: 50px;
-    }
-
-    .social-links a {
-      color: #f2c94c;
-      font-size: 1.5rem;
-      margin: 0 10px;
-      transition: color 0.3s ease;
-    }
-
-    .social-links a:hover {
-      color: #c27a28;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .about-container {
-        padding: 20px 15px;
-      }
-
-      .about-header h1 {
-        font-size: 2rem;
-      }
-
-      .about-section h2 {
-        font-size: 1.8rem;
-      }
-
-      .team-members {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .team-member {
-        width: 80%;
-        margin-bottom: 20px;
-      }
-    }
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
 
-  <!-- Navigation Menu -->
+  <!-- HEADER / NAVBAR -->
   <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/PAGES/about.html" class="active">About</a></li>
-        <li><a href="/PAGES/product.html">Products</a></li>
-        <li><a href="/PAGES/enquiry.html">Enquiry</a></li>
-        <li><a href="/PAGES/contact.html">Contact</a></li>
-        <li><a href="/PAGES/ordernow.html">Order Now</a></li>
+    <nav>
+      <button class="nav-toggle" aria-label="Toggle Navigation Menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./PAGES/about.html">About</a></li>
+        <li><a href="./PAGES/product.html">Products</a></li>
+        <li><a href="./PAGES/enquiry.html">Enquiry</a></li>
+        <li><a href="./PAGES/contact.html">Contact</a></li>
+        <li><a href="./PAGES/ordernow.html">Order Now</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- About Content -->
-  <main class="about-container">
-    <section class="about-header">
-      <h1>About Sweet Crumbs Bakery</h1>
-      <p>Freshly baked goodness, crafted with love and served with a smile.</p>
-      <img src="../ASSETS/inside sweet cramp.webp" alt="Inside Sweet Crumbs Bakery" class="about-image">
-    </section>
-
-    <section class="about-section">
-      <h2>Our Story</h2>
-      <p>Founded in 2020 in Seshego, Sweet Crumbs Bakery started as a small home-based business with a passion for creating delicious treats for family and friends. Over time, our love for baking and customer satisfaction helped us grow into a trusted local bakery known for quality, freshness, and friendly service.</p>
-      <p>At Sweet Crumbs, every pastry, loaf, and cake is baked from scratch using the finest ingredients. Whether it’s a birthday cake, wedding dessert, or a simple loaf of bread, we ensure each creation carries our signature taste of happiness.</p>
-    </section>
-
-    <section class="about-section">
-      <h2>Our Mission</h2>
-      <p>Our mission is to spread joy through freshly baked products that bring people together. We aim to maintain high standards of quality and service while supporting our community through local sourcing and customer care.</p>
-    </section>
-
-    <section class="about-section">
-      <h2>Our Values</h2>
-      <ul style="text-align:left; list-style-type: disc; padding-left: 30px;">
-        <li>💛 Quality Ingredients and Craftsmanship</li>
-        <li>🤝 Friendly and Reliable Customer Service</li>
-        <li>🌍 Supporting Local Communities</li>
-        <li>🎂 Creativity in Every Bake</li>
-      </ul>
-    </section>
-
-    <section class="team-section">
-      <h2>Meet Our Team</h2>
-      <div class="team-members">
-        <div class="team-member">
-          <img src="../ASSETS/dineo.jpg" alt="Founder - Dineo Talakgale">
-          <h3>Dineo Talakgale</h3>
-          <p>Founder & Head Baker</p>
-        </div>
-
-        <div class="team-member">
-          <img src="../ASSETS/manangere.webp" alt="Baking Assistant">
-          <h3>Happy M.</h3>
-          <p>Baking Assistant</p>
-        </div>
-
-        <div class="team-member">
-          <img src="../ASSETS/assistant.jpg" alt="Customer Service Representative">
-          <h3>Happiness S.</h3>
-          <p>Customer Service</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Sweet Crumbs Bakery | Designed by Talakgale Dineo</p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/Dineo Tala" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://wa.me/27682678076" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="gallery">
+      <img src="./ASSETS/first p.webp" alt="Fresh bakery products" onclick="openLightbox(this.src)" />
+      <img src="./ASSETS/chocolate cake web.webp" alt="Chocolate cake" onclick="openLightbox(this.src)" />
+      <img src="./ASSETS/first ct.webp" alt="Cupcakes from Sweet Crumbs Bakery" onclick="openLightbox(this.src)" />
     </div>
-  </footer>
 
+    <h1>Sweet Crumbs Bakery in Pretoria</h1>
+    <p>Baked with Love, Served with Joy</p>
+
+    <a href="./PAGES/ordernow.html" class="btn">Order Now</a>
+  </section>
+
+  <!-- HIGHLIGHT CARDS -->
+  <section class="highlights">
+    <div class="card">
+      <h2>Freshly Baked Daily</h2>
+      <p>All our goods are baked fresh every morning to ensure the best taste and quality.</p>
+    </div>
+
+    <div class="card">
+      <h2>Organic Ingredients</h2>
+      <p>We use organic flour, quinoa, whole wheat, and farm-fresh dairy products.</p>
+    </div>
+
+    <div class="card">
+      <h2>Custom Cakes</h2>
+      <p>Order custom-themed cakes for birthdays, weddings, and special occasions.</p>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <button class="accordion-btn">Do you deliver?</button>
+    <div class="accordion-content">
+      <p>Yes, we deliver within a 10km radius from our bakery.</p>
+    </div>
+
+    <button class="accordion-btn">Do you make gluten-free cakes?</button>
+    <div class="accordion-content">
+      <p>Yes, gluten-free cakes are available upon request.</p>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightboxModal" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightboxImage" class="lightbox-content" />
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
