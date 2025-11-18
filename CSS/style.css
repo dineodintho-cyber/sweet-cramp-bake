@@ -485,4 +485,34 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+    text-align: center;
+  }
+  .nav-menu {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* Make the first brown cake image larger in the gallery */
+.hero .gallery img:nth-child(1) {
+  width: 100; /* Make the first image 20% larger */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image fills the space */
+  transform: scale(1.2); /* Slightly scale it up */
+  z-index: 1; /* Bring it to the front */
+}
+
+/* Optional: Adjust other images to fit the new layout */
+.hero .gallery img {
+  width: 33%; /* Keep the other images at 33% width */
+  height: auto;
+  object-fit: cover;
+  margin-right: 10px; /* Add some space between the images */
+}
+
 

@@ -1,37 +1,68 @@
-hangelog
-sweet cramp bakery
+# Changelog for Sweet Crumbs Bakery Website
 
-1.0.3 - 2025-09-20
-Added
+## [Unreleased]
 
-Home page (index.html) with hero section including images, heading, tagline, and “Order Now” button.
-Highlights section showing features: Freshly Baked, Organic Ingredients, Custom Orders.
- Navigation menu linking Home, About, Product, Enquiry, Contact, and Order Now pages.
-Footer with social media links (Facebook, WhatsApp) and copyright.
-Dark beige text and gradient background applied to homepage.
-    
-fixed
- Corrected heading alignment and text styles.
-Ensured hero images display correctly with specified width and height.
+### Added
+- Added Google Map iframe to the About page for easy location finding.
+- Added social media links (Facebook, WhatsApp) in the footer.
 
-1.0.2- 2025-09-22
-Changed
-CSS renamed from style.css → main.css (ensure updated in HTML link).
-Updated README to reflect new CSS file name.
+### Changed
+- Updated the homepage hero section with more appealing images.
+- Improved product description cards for better readability and design.
 
-1.0.1 - 2025-09-23
-Added
-References section in README with corrected citation names.
-Installation and usage instructions added to README.
-About Us page structure added.
+### Fixed
+- Fixed broken navigation links on the homepage (About, Products, Contact).
+- Fixed broken image paths for product images on the homepage.
+- Fixed the layout inconsistency between the About and Home page.
 
-Fixed
- Improved formatting of README for clarity.
+---
 
-1.0.0 - 2025-09-26
-Added
-Initial project structure:
-index.html, about.html, contact.html, products.html, enquiry.html, order now.html.
-css/style.css for site styling.
-assets/images/ and assets/icons/ directories.
-Basic homepage layout with headings and introduction.
+## [v1.0.0] - 2025-11-18
+
+### Added
+- First release of Sweet Crumbs Bakery website.
+- Hero section with high-quality images showcasing products.
+- Added product highlight cards for Daily Bakes, Organic Ingredients, and Custom Cakes.
+- FAQ accordion-style section to handle customer inquiries.
+- Footer with social media links (Facebook, WhatsApp).
+- Google Map embedded on the About page for location.
+
+### Changed
+- Modified the layout to be fully responsive using CSS Grid and Flexbox.
+- Adjusted button designs and hover effects for a modern look.
+  
+### Fixed
+- Fixed navigation menu for mobile responsiveness.
+- Updated the layout of the card section to align properly on all screen sizes.
+
+---
+
+## [v0.9.0] - 2025-10-25
+
+### Added
+- Basic website structure including header, footer, and navigation menu.
+- Placeholder images for bakery products.
+
+### Fixed
+- Corrected HTML errors that were causing layout issues.
+
+---
+
+## [v0.8.0] - 2025-10-10
+
+### Added
+- Set up basic website framework with essential pages: Home, About, Contact.
+
+### Changed
+- Made minor adjustments to the styling for the Home page layout.
+
+### Fixed
+- Fixed broken CSS paths preventing styles from being applied.
+
+---
+
+## [v0.1.0] - 2025-09-30
+
+### Initial Release
+- Created initial framework for Sweet Crumbs Bakery website.
+- Implemented homepage with navigation, hero section, and product cards.
