@@ -55,7 +55,8 @@ if (hamburger && navMenu) {
 <script>
 const accordionButtons = document.querySelectorAll(".accordion-btn");
 
-accordionButtons.forEach(button => {
+accordionButtons.forEach(button =
+ {
   button.addEventListener("click", () => {
     button.classList.toggle("active"); // highlight clicked question
     const panel = button.nextElementSibling;
@@ -67,6 +68,6 @@ accordionButtons.forEach(button => {
       panel.style.maxHeight = panel.scrollHeight + "px"; // expand answer
       panel.style.padding = "15px";
     }
-  });
+  })
 });
 </script>
