@@ -4,6 +4,17 @@ Founded in 2020 in Seshego, Sweet Crumbs Bakery has quickly become a well-loved 
 
 We started Sweet Crumbs Bakery in 2020 with the goal of offering our community delicious, organic breads, cakes, and pastries. We’ve since expanded into custom cakes for weddings, birthdays, and other special events. Each item is made with care and a passion for quality baking.
 
+## Features
+
+- **Hero Section**: Showcases product images with a call-to-action button.
+- **Enquiry Form**: Allows customers to submit inquiries about products, custom cakes, or services.
+- **Contact Form**: For general inquiries with input validation and feedback.
+- **Product Section**: Display different categories of bakery products.
+- **FAQ Section**: Answers to frequently asked questions regarding delivery, ingredients, and custom cakes.
+- **Responsive Design**: Optimized for mobile and desktop views.
+- **SEO Optimization**: Basic SEO elements like meta tags and title tags for better search engine visibility.
+
+---
 ## it was bult with 
 *HTML
 *CSS
@@ -61,3 +72,5 @@ Facebook: Sweet Crumbs Bakery Facebook
 
 WhatsApp: Chat with us on WhatsApp
 
+references
+cd sweet-crumbs-bakery

@@ -71,3 +71,81 @@ accordionButtons.forEach(button =
   })
 });
 </script>
+// Function to handle form submission and validation
+document.querySelector('.enquiry-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission to validate first
+
+  // Clear previous error messages
+  clearErrors();
+
+  let isValid = true;
+  
+  // Form field variables
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const product = document.getElementById('product').value;
+  const message = document.getElementById('message').value;
+
+  // Name Validation
+  if (name.trim() === '') {
+    showError('name', 'Name is required');
+    isValid = false;
+  }
+
+  // Email Validation (basic format check)
+  if (email.trim() === '') {
+    showError('email', 'Email is required');
+    isValid = false;
+  } else if (!validateEmail(email)) {
+    showError('email', 'Please enter a valid email address');
+    isValid = false;
+  }
+
+  // Phone Number Validation
+  if (phone.trim() === '') {
+    showError('phone', 'Phone number is required');
+    isValid = false;
+  }
+
+  // Product Validation
+  if (product === '') {
+    showError('product', 'Please select a product');
+    isValid = false;
+  }
+
+  // Message Validation
+  if (message.trim() === '') {
+    showError('message', 'Message cannot be empty');
+    isValid = false;
+  }
+
+  // If form is valid, show success message and reset form
+  if (isValid) {
+    document.getElementById('form-feedback').textContent = 'Thank you for your enquiry! We’ll respond shortly.';
+    document.getElementById('form-feedback').style.color = 'green';
+    document.getElementById('form-feedback').style.display = 'block';
+    document.querySelector('.enquiry-form').reset(); // Reset the form
+  }
+});
+
+// Function to show error message
+function showError(field, message) {
+  const errorElement = document.getElementById(`${field}-error`);
+  errorElement.textContent = message;
+  errorElement.style.display = 'block';
+}
+
+// Function to clear all error messages
+function clearErrors() {
+  const errorMessages = document.querySelectorAll('.error-message');
+  errorMessages.forEach(error => {
+    error.style.display = 'none';
+  });
+}
+
+// Email Validation function
+function validateEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}

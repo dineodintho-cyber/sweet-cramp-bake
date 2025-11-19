@@ -467,7 +467,7 @@ footer {
   background-color: #222;
   padding: 20px;
   text-align: center;
-  color: #ccc;
+  color: #f2c94c;
   margin-top: 50px;
 }
 
@@ -575,69 +575,278 @@ footer {
   padding: 10px;
   font-size: 16px;
   background-color: #222; /* Answer background color */
-  margin-top :
-  /* Hide the navigation menu by default */
-.nav-menu {
-  display: none;
-  background-color: #333;
-  position: absolute;
-  top: 60px; /* Adjust based on where you want it */
-  right: 0;
-  width: 100%;
-  text-align: center;
+  margin-top :auto
 }
 
-.nav-menu ul {
-  list-style-type: none;
+  /* Basic Styling for Enquiry Form */
+enquiry-form-section {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enquiry-form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="email"] {
+  height: 40px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+/* Form feedback */
+.form-feedback {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: green;
+  display: none;
+}
+/* RESET */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-menu ul li {
-  padding: 15px;
-}
-
-.nav-menu ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
-}
-
-/* Hamburger Menu */
-.hamburger-menu {
+/* BODY */
+body {
+  background-color: black;
+  color: #e9ccc2;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 25px;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 20px 50px;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+header nav ul li a {
+  color: #c27a28;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #f2c94c;
+}
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: black;
+  color: #e9ccc2;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 20px 50px;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+header nav ul li a {
+  color: #c27a28;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #f2c94c;
+}
+
+/* ENQUIRY SECTION */
+.enquiry-section {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 20px;
+  background-color: #222222;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.enquiry-section h1 {
+  font-size: 2.5rem;
+  color: #f2c94c;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* FORM STYLES */
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.enquiry-form label {
+  font-weight: bold;
+  color: #f2c94c;
+  text-align: left;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+  padding: 10px;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #ccc;
+  font-size: 1rem;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.enquiry-form input::placeholder,
+.enquiry-form textarea::placeholder {
+  color: #bbb;
+}
+
+.enquiry-form button {
+  padding: 15px;
+  background-color: #c27a28;
+  color: #111;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #f2c94c88;
+  text-transform: uppercase;
+  border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
-.hamburger-menu .bar {
-  height: 4px;
-  background-color: #fff;
-  border-radius: 2px;
+.enquiry-form button:hover {
+  background-color: #f2c94c;
+  color: #111;
+  box-shadow: 0 0 20px #f2c94c88;
 }
 
-/* Show the menu when it is active */
-.nav-menu.open {
-  display: block;
+/* FOOTER */
+footer {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #333;
+  padding: 25px 20px 10px;
+  font-size: 0.9rem;
+  color: #e9ccc2;
+  margin-top: 50px;
 }
 
-/* Hamburger icon animation */
-.hamburger-menu.active .bar:nth-child(1) {
-  transform: rotate(45deg);
-  position: relative;
-  top: 8px;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .enquiry-section {
+    padding: 30px 15px;
+  }
 
-.hamburger-menu.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger-menu.active .bar:nth-child(3) {
-  transform: rotate(-45deg);
-  position: relative;
-  bottom: 8px;
+  .enquiry-form input,
+  .enquiry-form select,
+  .enquiry-form textarea {
+    font-size: 0.9rem;
+  }
 }
