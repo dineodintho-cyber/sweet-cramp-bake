@@ -514,5 +514,34 @@ footer {
   object-fit: cover;
   margin-right: 10px; /* Add some space between the images */
 }
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 20px; /* Optional: adds space between cards */
+}
+
+.card {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+/* Container for the images */
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the two images */
+  gap: 20px; /* Optional: Adds space between the images */
+  align-items: center; /* Vertically centers the images */
+}
+
+/* Style for each image */
+.image-container img {
+  width: 48%; /* Makes both images take up 48% of the container width */
+  height: 300px; /* Set a fixed height to ensure both images are the same size */
+  object-fit: cover; /* Ensures the images fill the container without distortion */
+  border-radius: 10px; /* Optional: Adds rounded corners to images */
+}
+
 
 
