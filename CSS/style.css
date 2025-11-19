@@ -576,3 +576,68 @@ footer {
   font-size: 16px;
   background-color: #222; /* Answer background color */
   margin-top :
+  /* Hide the navigation menu by default */
+.nav-menu {
+  display: none;
+  background-color: #333;
+  position: absolute;
+  top: 60px; /* Adjust based on where you want it */
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  padding: 15px;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Show the menu when it is active */
+.nav-menu.open {
+  display: block;
+}
+
+/* Hamburger icon animation */
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  bottom: 8px;
+}
