@@ -542,6 +542,39 @@ footer {
   object-fit: cover; /* Ensures the images fill the container without distortion */
   border-radius: 10px; /* Optional: Adds rounded corners to images */
 }
+/* FAQ container */
+.faq-container {
+  width: 80%; /* Adjust width as necessary */
+  margin: 0 auto; /* Center the FAQ */
+}
 
+/* Styling for each FAQ item */
+.faq-item {
+  margin-bottom: 10px;
+  background-color: #333; /* Background color */
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.faq-question {
+  background-color: #444; /* Button color */
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none; /* Hide the answer initially */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #222; /* Answer background color */
+  margin-top:
 
 
